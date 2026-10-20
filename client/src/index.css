@@ -186,19 +186,6 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 auto;
 }
 
-.event-location-button {
-  padding: 0.45rem 1rem;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(201, 104, 141, 0.28);
-  color: var(--color-event-pink-dark);
-  box-shadow: 0 6px 16px rgba(151, 101, 137, 0.1);
-}
-
-.event-location-button:hover {
-  background: rgba(255, 244, 249, 0.95);
-  border-color: rgba(201, 104, 141, 0.42);
-}
-
 .container.rsvp-page {
   min-height: 100vh;
   max-width: 740px;
@@ -316,11 +303,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .birthday-invitation .event-location-text {
   color: var(--color-event-pink-text);
-}
-
-.birthday-invitation .event-location-button {
-  border-color: var(--color-gold-line);
-  box-shadow: none;
 }
 
 .birthday-page .rsvp-card {
@@ -661,11 +643,6 @@ input:focus, textarea:focus, select:focus {
 
   .event-location-text small {
     font-size: 0.82rem;
-  }
-
-  .event-location-button {
-    padding: 0.4rem 0.9rem;
-    font-size: 0.95rem;
   }
 
   .container.rsvp-page {

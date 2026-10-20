@@ -1,7 +1,5 @@
 import { Flower2, MapPin } from 'lucide-react';
 
-const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Sítio Magnata, Campos Novos Paulista')}`;
-
 export default function EventHeader({ showInvitation = false, showLocation = true, celebration = false }) {
   return (
     <div className={`event-header text-center${celebration ? ' birthday-invitation' : ''}`}>
@@ -10,7 +8,7 @@ export default function EventHeader({ showInvitation = false, showLocation = tru
       {celebration && (
         <>
           <p className="event-anniversary">
-            <span className="anniversary-number">70</span>
+            <span className="anniversary-number">80</span>
             <span className="anniversary-unit">anos</span>
           </p>
           <div className="invitation-divider" aria-hidden="true"><Flower2 size={22} strokeWidth={1.3} /></div>
@@ -18,7 +16,7 @@ export default function EventHeader({ showInvitation = false, showLocation = tru
       )}
       {showInvitation && (
         <p className="rsvp-invitation">
-          Com muita alegria queremos convidar você para comemorar esse dia tão especial conosco
+          Com muita alegria, queremos convidar você para comemorar esse dia tão especial conosco!
         </p>
       )}
       <p className="event-date">{celebration && <span className="event-date-label">Reserve esta data</span>}20 de novembro</p>
@@ -31,9 +29,6 @@ export default function EventHeader({ showInvitation = false, showLocation = tru
               <small>Campos Novos Paulista</small>
             </span>
           </div>
-          <a className="btn event-location-button" href={MAPS_URL} target="_blank" rel="noreferrer">
-            Abrir no Maps
-          </a>
         </div>
       )}
     </div>

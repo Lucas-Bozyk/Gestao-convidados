@@ -92,7 +92,7 @@ export default function Rsvp() {
 
         <div className="card rsvp-card rsvp-response text-center" role="status">
           <Heart className="rsvp-response-icon" size={40} strokeWidth={1.3} aria-hidden="true" />
-          <p className="invitation-eyebrow">Marly · 70 anos</p>
+          <p className="invitation-eyebrow">Marly · 80 anos</p>
           <h2>{status === 1 ? 'Vamos celebrar juntos!' : 'Obrigada pelo carinho!'}</h2>
           <p className="rsvp-response-message">
             {status === 1
